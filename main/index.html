@@ -1,0 +1,102 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./ai.webp" alt="Company Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="banner">
+        <div class="scrollable-banner">
+            <div class="banner-item">
+                <img src="https://www.fujitsu.com/global/imagesgig5/ai-banner-800x450_tcm100-7204059_tcm100-6286607-32.jpg"
+                    alt="AI Research">
+            </div>
+            <div class="banner-item">
+                <img src="https://as1.ftcdn.net/v2/jpg/03/78/60/36/1000_F_378603646_PDgXIrj2MnhsWFTbf8Yo5fR2UbxaopN3.jpg"
+                    alt="Machine Learning Solutions">
+            </div>
+            <div class="banner-item">
+                <img src="https://cloudinary.hbs.edu/hbsit/image/upload/s--YocdHEbD--/f_auto,c_fill,h_375,w_750,/v20200101/A17A58369E0D9FBC28574F424FBDB551.jpg"
+                    alt="Data Analysis">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to ML Company, where we specialize in cutting-edge machine learning solutions. Our team of experts is
+            dedicated to providing innovative technologies that empower businesses to achieve their goals. From data
+            analysis to predictive modeling, we offer a wide range of services designed to meet the unique needs of our
+            clients.</p>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Predictive Analytics</h3>
+                    <p>Predictive Analytics uses advanced machine learning algorithms to analyze historical data and
+                        predict future trends. By leveraging data patterns, businesses can forecast sales, manage risks,
+                        and improve decision-making processes.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Natural Language Processing (NLP)</h3>
+                    <p>Our Natural Language Processing (NLP) service enables computers to understand, interpret, and
+                        respond to human language in a valuable way. Applications include chatbots, sentiment analysis,
+                        and automated content generation.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Computer Vision</h3>
+                    <p>Computer Vision technology allows machines to interpret and make decisions based on visual data.
+                        From image and video recognition to real-time object detection, this service is essential for
+                        applications in security, healthcare, manufacturing, and autonomous vehicles.</p>
+                </div>
+            </div>
+            <button class="prev" id="prevBtn" onclick="movePrev()">&#10094;</button>
+            <button class="next" id="nextBtn" onclick="moveNext()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="send_mail.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

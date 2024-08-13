@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b6c0cc;
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+}
+
+header .logo img {
+    height: 200px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: center;
+    color: rgb(70, 72, 75);
+    font-size: 30px;
+}
+
+.banner {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.banner .scrollable-banner {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.banner .banner-item {
+    min-width: 33.33%;
+    flex-shrink: 0;
+    padding: 0 10px;
+}
+
+.banner .banner-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about,
+.services,
+.contact {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.about h2,
+.services h2,
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#submitBtn {
+    padding: 20px;
+    background-color: #275072;
+    color: white;
+    border: none;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    /* Align center */
+    margin-top: 4px;
+}
+
+
+#submitBtn:hover {
+    background-color: #333552;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-item h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.carousel-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    left: -5px;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    right: -5px;
+}
+
+#prevBtn:hover,
+#nextBtn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
